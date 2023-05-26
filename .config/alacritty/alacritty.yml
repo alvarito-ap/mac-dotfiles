@@ -118,7 +118,7 @@ font:
 
   bold:
     family: VictorMono Nerd Font
-    style: SemiBold
+    style: Bold
 
   italic:
     family: VictorMono Nerd Font 
@@ -126,9 +126,9 @@ font:
       
   bold_italic:
     family: VictorMono Nerd Font
-    style: SemiBold Italic
+    style: Bold Italic
 
-  size: 15.0
+  size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -540,7 +540,7 @@ color_schemes:
 
 
 
-colors: *dracula 
+colors: *mocha
 
 cursor:
   # Cursor style
