@@ -1,0 +1,12 @@
+/*
+!.config/
+.config/iterm2/*
+.config/karabiner/*
+.config/raycast/*
+.config/wireshark/*
+.config/spicetify/*
+.config/nvim-bak/plugin/*
+!.zshrc
+!.gitignore
+**DS_Store
+
