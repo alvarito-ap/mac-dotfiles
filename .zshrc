@@ -91,6 +91,8 @@ source /opt/homebrew/Cellar/fzf/0.40.0/shell/key-bindings.zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
+
 autoload -U promptinit; promptinit
 prompt pure
 
