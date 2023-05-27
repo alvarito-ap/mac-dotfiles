@@ -19,8 +19,8 @@ vim.keymap.set("n", "<leader>bs", function() vim.cmd "w" end, {})
 vim.keymap.set("n", "<leader>bf", function() vim.lsp.buf.format() end, {})
 vim.keymap.set("n", "<leader>bx", function() vim.cmd "bd" end, {})
 vim.keymap.set("n", "<leader>bw", function() vim.cmd "%bd|e#" end, {})
-vim.keymap.set("n", "<C-[>", function() vim.cmd "bprev" end, {})
-vim.keymap.set("n", "<C-]>", function() vim.cmd "bnext" end, {})
+vim.keymap.set("n", "<C-i>", function() vim.cmd "bprev" end, {})
+vim.keymap.set("n", "<C-o>", function() vim.cmd "bnext" end, {})
 
 
 
@@ -30,7 +30,7 @@ local ui = require("harpoon.ui")
 vim.keymap.set("n", "<leader>a", mark.add_file)
 vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu)
 
-vim.keymap.set("n", "<C-h>", function() ui.nav_file(1) end)
-vim.keymap.set("n", "<C-j>", function() ui.nav_file(2) end)
-vim.keymap.set("n", "<C-k>", function() ui.nav_file(3) end)
-vim.keymap.set("n", "<C-l>", function() ui.nav_file(4) end)
+vim.keymap.set("n", "<A-h>", function() ui.nav_file(1) end)
+vim.keymap.set("n", "<A-j>", function() ui.nav_file(2) end)
+vim.keymap.set("n", "<A-k>", function() ui.nav_file(3) end)
+vim.keymap.set("n", "<A-l>", function() ui.nav_file(4) end)

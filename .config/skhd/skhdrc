@@ -51,8 +51,11 @@ cmd - 8 : yabai -m space --focus 8
 # toggle window tiling
 ctrl + shift - p : yabai -m window --toggle float
 
-# toggle window tiling
-ctrl + shift - o : yabai -m window --toggle sticky --toggle topmost
+# toggle topmost
+ctrl + shift - o : yabai -m window --toggle topmost
+
+# toggle topmost
+ctrl + shift - u : yabai -m window --toggle sticky
 
 # toggle full screen
 ctrl + shift - m : yabai -m window --toggle zoom-fullscreen

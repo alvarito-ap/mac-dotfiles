@@ -22,7 +22,7 @@ do
                               background.border_color=$BACKGROUND_2\
                               background.drawing=off\
                               label.drawing=off\
-                              click_script="yabai -m space --focus $sid" \
+                              script=$CONFIG_DIR/plugins/space.sh \
             --subscribe space.$sid mouse.clicked
 done
 
