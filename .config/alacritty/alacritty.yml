@@ -997,7 +997,12 @@ key_bindings:
   #- { key: M,              mods: Command,                    action: Minimize              }
   - { key: Q,              mods: Command,                    action: Quit                  }
   - { key: W,              mods: Command,                    action: Quit                  }
-  - { key: N,              mods: Command,                    action: CreateNewWindow      }
+  - { key: N,              mods: Command,                    action: CreateNewWindow       }
+  - { key: Right,          mods: Alt,                        chars : "\x1BF"               }
+  - { key: Left,           mods: Alt,                        chars : "\x1BB"               }
+  - { key: Right,          mods: Command,                    chars : "\x05"               }
+  - { key: Left,           mods: Command,                    chars : "\x01"               }
+  - { key: Back,      mods: Command,                    chars : "\x15"               }
   #- { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
