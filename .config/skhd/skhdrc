@@ -60,8 +60,17 @@ ctrl + shift - u : yabai -m window --toggle sticky
 # toggle full screen
 ctrl + shift - m : yabai -m window --toggle zoom-fullscreen
 
+# toggle full screen
+ctrl + shift - n : yabai -m window --toggle zoom-parent
+
 # toggle layout  split type
 ctrl + shift - i : yabai -m window --toggle split
+
+# rotate space 90
+ctrl + shift - y : yabai -m space --rotate 90
+
+# balance windows
+ctrl + shift - b : yabai -m space --balance
 
 # toggle resize
 ctrl + cmd - h : yabai -m window west --resize right:-20:0 2> /dev/null || yabai -m window --resize right:-20:0

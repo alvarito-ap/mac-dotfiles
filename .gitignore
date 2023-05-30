@@ -7,6 +7,7 @@
 .config/wireshark/*
 .config/spicetify/*
 .config/nvim-bak/plugin/*
+.config/gh/*
 !.zshrc
 !.gitignore
 **DS_Store
