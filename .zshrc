@@ -25,7 +25,7 @@ alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
 alias vi="nvim"
-alias tree="tree -C"
+alias tree="exa --tree"
 
 alias tldrf='tldr --list | fzf --preview "tldr {1}" --preview-window=right,70% | xargs tldr '
 alias gitcb='git branch --sort=-committerdate | fzf --header "Checout Recent Branch" --preview "git diff --color=always {1} | delta" --pointer="->" | xargs git checkout '
@@ -34,4 +34,4 @@ alias cdf='cd$(find * -type d | fzf --preview "exa -la {}")'
 bindkey "^X\\x7f" backward-kill-line
 bindkey "^ " autosuggest-accept
 
-
+eval "$(zoxide init zsh)"

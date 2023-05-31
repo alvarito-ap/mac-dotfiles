@@ -51,26 +51,26 @@ cmd - 8 : yabai -m space --focus 8
 # toggle window tiling
 ctrl + shift - p : yabai -m window --toggle float
 
-# toggle topmost
-ctrl + shift - o : yabai -m window --toggle topmost
-
-# toggle topmost
-ctrl + shift - u : yabai -m window --toggle sticky
-
-# toggle full screen
-ctrl + shift - m : yabai -m window --toggle zoom-fullscreen
-
-# toggle full screen
-ctrl + shift - n : yabai -m window --toggle zoom-parent
-
 # toggle layout  split type
-ctrl + shift - i : yabai -m window --toggle split
+ctrl + shift - u : yabai -m window --toggle split
 
 # rotate space 90
 ctrl + shift - y : yabai -m space --rotate 90
 
 # balance windows
 ctrl + shift - b : yabai -m space --balance
+
+# toggle topmost
+ctrl + shift - o : yabai -m window --toggle topmost
+
+# toggle sticky
+ctrl + shift - i : yabai -m window --toggle sticky
+
+# toggle full screen
+ctrl + shift - m : yabai -m window --toggle zoom-fullscreen
+
+# toggle full screen
+ctrl + shift - n : yabai -m window --toggle zoom-parent
 
 # toggle resize
 ctrl + cmd - h : yabai -m window west --resize right:-20:0 2> /dev/null || yabai -m window --resize right:-20:0
