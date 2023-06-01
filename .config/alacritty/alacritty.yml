@@ -113,22 +113,22 @@ window:
 # Font configuration
 font:
   normal:
-    family: VictorMono Nerd Font
-    style: Medium
+    family: VictorMono Nerd Font Propo
+    style: Regular
 
   bold:
-    family: VictorMono Nerd Font
-    style: Bold
+    family: VictorMono Nerd Font Propo
+    style: Regular
 
   italic:
-    family: VictorMono Nerd Font 
-    style: Medium Italic
+    family: VictorMono Nerd Font Propo
+    style: Italic
       
   bold_italic:
-    family: VictorMono Nerd Font
-    style: Bold Italic
+    family: VictorMono Nerd Font Propo
+    style: Italic
 
-  size: 16.0
+  size: 17.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter

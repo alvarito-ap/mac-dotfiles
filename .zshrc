@@ -35,3 +35,4 @@ bindkey "^X\\x7f" backward-kill-line
 bindkey "^ " autosuggest-accept
 
 eval "$(zoxide init zsh)"
+export BAT_THEME="Catppuccin-mocha"
