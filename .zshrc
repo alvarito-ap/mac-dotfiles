@@ -26,6 +26,7 @@ alias ll="exa -l"
 alias la="exa -la"
 alias vi="nvim"
 alias tree="exa --tree"
+alias cd="z"
 
 alias tldrf='tldr --list | fzf --preview "tldr {1}" --preview-window=right,70% | xargs tldr '
 alias gitcb='git branch --sort=-committerdate | fzf --header "Checout Recent Branch" --preview "git diff --color=always {1} | delta" --pointer="->" | xargs git checkout '
