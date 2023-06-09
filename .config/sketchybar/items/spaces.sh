@@ -9,7 +9,7 @@ do
              --set space.$sid associated_space=$sid \
                               icon="${SPACE_ICONS[i]}"\
                               icon.padding_left=10\
-                              icon.padding_right=10\
+                              icon.padding_right=2\
                               padding_left=4\
                               padding_right=4\
                               label.padding_right=20\
