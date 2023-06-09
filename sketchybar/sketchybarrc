@@ -1,0 +1,71 @@
+echo $CONFIG_DIR
+source "$CONFIG_DIR/plugins/colors.sh"
+FONT="Liga SFMono Nerd Font"
+PADDINGS=3
+# Setting up default values
+defaults=(
+  updates=when_shown
+  icon.font="$FONT:Bold:14"
+  icon.color=$ICON_COLOR
+  icon.padding_left=$PADDINGS
+  icon.padding_right=$PADDINGS
+  label.font="$FONT:Semibold:13.0"
+  label.color=$LABEL_COLOR
+  label.padding_left=$PADDINGS
+  label.padding_right=$PADDINGS
+  padding_right=$PADDINGS
+  padding_left=$PADDINGS
+  background.height=26
+  background.corner_radius=8
+  background.border_width=2
+  popup.background.border_width=2
+  popup.background.corner_radius=9
+  popup.background.border_color=$POPUP_BORDER_COLOR
+  popup.background.color=$POPUP_BACKGROUND_COLOR
+  popup.blur_radius=20
+  popup.background.shadow.drawing=on
+)
+
+sketchybar --default "${defaults[@]}"
+
+############## BAR ##############
+sketchybar --bar height=34 \
+                 y_offset=4 \
+                 blur_radius=0 \
+                 position=top \
+                 padding_left=4 \
+                 padding_right=2 \
+                 margin=12 \
+                 corner_radius=12 \
+                 color=0x336615d1 \
+                 notch_width=500 \
+                 sticky=on \
+                 display=all \
+                 shadow=on
+
+############# GLOBAL DEFAULTS ##############
+source "$CONFIG_DIR/items/logo.sh"
+source "$CONFIG_DIR/items/spaces.sh"
+source "$CONFIG_DIR/items/yabai.sh"
+
+############### ITEM DEFAULTS ###############
+sketchybar --default label.padding_left=10 \
+                     label.padding_right=10 \
+                     icon.padding_left=10 \
+                     icon.padding_right=6 \
+                     icon.font="Hack Nerd Font:Bold:18.0" \
+                     label.font="$FONT:Semibold:14.0" \
+                     background.height=26 \
+                     background.padding_right=4 \
+                     background.padding_left=4\
+                     background.color=$BACKGROUND_1
+
+############## RIGHT ITEMS ##############
+source "$CONFIG_DIR/items/weather.sh"
+source "$CONFIG_DIR/items/clock.sh"
+source "$CONFIG_DIR/items/power.sh"
+source "$CONFIG_DIR/items/spotify.sh"
+############### FINALIZING THE SETUP ##############
+sketchybar --update
+
+echo "sketchybar configuration loaded..." 
