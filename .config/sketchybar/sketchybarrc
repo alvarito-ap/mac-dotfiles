@@ -37,7 +37,7 @@ sketchybar --bar height=34 \
                  padding_right=2 \
                  margin=12 \
                  corner_radius=12 \
-                 color=0x336615d1 \
+                 color=0x99826EE0 \
                  notch_width=500 \
                  sticky=on \
                  display=all \
@@ -68,4 +68,4 @@ source "$CONFIG_DIR/items/spotify.sh"
 ############### FINALIZING THE SETUP ##############
 sketchybar --update
 
-echo "sketchybar configuration loaded..." 
+echo "sketchybar configuration loaded..."

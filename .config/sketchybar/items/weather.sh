@@ -6,6 +6,7 @@ sketchybar --add item weather.moon q \
     icon.padding_left=6 \
     icon.padding_right=6 \
     label.drawing=off \
+    script="$CONFIG_DIR/plugins/toggle-darkmode.sh" \
     --subscribe weather.moon mouse.clicked
 
 sketchybar --add item weather q \

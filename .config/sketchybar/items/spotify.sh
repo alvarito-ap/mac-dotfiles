@@ -1,3 +1,13 @@
+sketchybar --add item lollipop e \
+    --set lollipop \
+    icon= \
+    icon.padding_left=8 \
+    icon.padding_right=8 \
+    label.drawing=off \
+    background.padding_left=100 \
+    script="$CONFIG_DIR/plugins/spotify-next.sh" \
+    --subscribe lollipop mouse.clicked
+
 sketchybar --add item spotify e \
     --set spotify \
     icon= \
@@ -7,7 +17,6 @@ sketchybar --add item spotify e \
     label.padding_right=8 \
     icon.padding_left=8 \
     icon.padding_right=8 \
-    background.padding_left=100 \
     updates=on \
     update_freq=1 \
     script="$CONFIG_DIR/plugins/spotify.sh" \

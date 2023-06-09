@@ -1,5 +1,6 @@
 sketchybar --add item battery right \
     --set battery \
+    label.padding_left=4 \
     update_freq=20 \
     script="$CONFIG_DIR/plugins/power.sh"
 #sketchybar --add item battery right \
