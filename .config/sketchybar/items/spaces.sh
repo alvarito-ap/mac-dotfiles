@@ -8,12 +8,12 @@ do
   sketchybar --add space space.$sid left \
              --set space.$sid associated_space=$sid \
                               icon="${SPACE_ICONS[i]}"\
-                              icon.padding_left=10\
+                              icon.padding_left=8\
                               icon.padding_right=2\
                               padding_left=4\
                               padding_right=4\
-                              label.padding_right=20\
-                              icon.highlight_color=$RED\
+                              label.padding_right=15\
+                              icon.highlight_color=0xffa6e3a1\
                               label.color=$GREY\
                               label.highlight_color=$WHITE\
                               label.font="sketchybar-app-font:Regular:16.0"\
@@ -43,4 +43,6 @@ sketchybar --add item window_title left \
            --set window_title    script="~/.config/sketchybar/plugins/window_title.sh" \
                                  icon.drawing=off \
                                  label.font="$FONT:Bold:14.0" \
+                                 background.padding_left=0 \
+                                 label.color=$WHITE \
            --subscribe window_title front_app_switched

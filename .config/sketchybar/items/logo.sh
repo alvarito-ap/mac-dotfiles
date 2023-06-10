@@ -6,7 +6,7 @@ sketchybar --add item logo left \
                  icon.color=0xff010101 \
                  icon.padding_left=6 \
                  icon.padding_right=7 \
-                 background.color=0xffA5E0D5 \
+                 background.color=0xffa6e3a1 \
                  background.padding_right=4 \
                  background.padding_left=4 \
                  click_script="sketchybar --update"

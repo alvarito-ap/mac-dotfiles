@@ -1,0 +1,17 @@
+[?1049h[1;24r(B[m[4l[?7hTraceback (most recent call last):
+  File "/opt/homebrew/bin/glances", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/homebrew/Cellar/glances/3.4.0.3/libexec/lib/python3.11/site-packages/glances/__init__.py", line 185, in main
+    start(config=core.get_config(), args=core.get_args())
+  File "/opt/homebrew/Cellar/glances/3.4.0.3/libexec/lib/python3.11/site-packages/glances/__init__.py", line 108, in start
+    mode = GlancesMode(config=config, args=args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/glances/3.4.0.3/libexec/lib/python3.11/site-packages/glances/standalone.py", line 106, in __init__
+    self.screen = GlancesCursesStandalone(config=config, args=args)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/glances/3.4.0.3/libexec/lib/python3.11/site-packages/glances/outputs/glances_curses.py", line 156, in __init__
+    self._init_cursor()
+  File "/opt/homebrew/Cellar/glances/3.4.0.3/libexec/lib/python3.11/site-packages/glances/outputs/glances_curses.py", line 211, in _init_cursor
+    curses.cbreak()
+_curses.error: cbreak() returned ERR

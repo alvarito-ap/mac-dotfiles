@@ -1,0 +1,5 @@
+CPU_JSON=$(curl -s http://localhost:61208/api/3/cpu)
+USER=$(echo $CPU_JSON | jq '.user')
+SYSTEM=$(echo $CPU_JSON | jq '.system')
+TOTAL=$(echo $CPU_JSON | jq '.total')
+sketchybar --set $NAME label=$(echo "$USER~$SYSTEM~$TOTAL")
