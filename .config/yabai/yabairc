@@ -6,7 +6,7 @@ sudo yabai --load-sa
 
 yabai -m config layout bsp
 
-yabai -m config external_bar               all:44:0     \
+yabai -m config external_bar               all:38:0     \
                 window_border              on           \
                 window_zoom_persist        off          \
                 window_placement           second_child \
@@ -46,6 +46,7 @@ yabai -m signal --add event=window_destroyed action="sketchybar --trigger window
 
 # not managed apps
 yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Notes$" manage=off
 yabai -m rule --add app="^Activity Monitor$" manage=off
 yabai -m rule --add app="^Citrix Viewer$" manage=off
 yabai -m rule --add app="^Citrix$" manage=off
@@ -56,3 +57,4 @@ yabai -m rule --add app="^TradingView$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^Dark Noise$" manage=off
 yabai -m rule --add app="^Endel$" manage=off
+yabai -m rule --add app="^iTerm2$" manage=off

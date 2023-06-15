@@ -2,19 +2,19 @@
 
 # left
 alt + shift - h : yabai -m window --swap west
-ctrl + shift - h : yabai -m window --focus west
+alt - h : yabai -m window --focus west
 
 # up
 alt + shift - k : yabai -m window --swap north
-ctrl + shift - k : yabai -m window --focus north
+alt - k : yabai -m window --focus north
 
 #right
 alt + shift - l : yabai -m window --swap east
-ctrl + shift - l : yabai -m window --focus east
+alt - l : yabai -m window --focus east
 
 # down
 alt + shift - j : yabai -m window --swap south
-ctrl + shift - j : yabai -m window --focus south
+alt - j : yabai -m window --focus south
 
 # space 1
 cmd + alt - 1 : yabai -m window --space 1
@@ -49,33 +49,34 @@ cmd + alt - 8 : yabai -m window --space 8
 cmd - 8 : yabai -m space --focus 8
 
 # toggle window tiling
-ctrl + shift - p : yabai -m window --toggle float
+alt - p : yabai -m window --toggle float
 
 # toggle layout  split type
-ctrl + shift - u : yabai -m window --toggle split
+alt - u : yabai -m window --toggle split
 
 # rotate space 90
-ctrl + shift - y : yabai -m space --rotate 90
+alt - y : yabai -m space --rotate 90
+alt + shift - y : yabai -m space --rotate 270
 
 # balance windows
-ctrl + shift - b : yabai -m space --balance
+alt - b : yabai -m space --balance
 
 # toggle topmost
-ctrl + shift - o : yabai -m window --toggle topmost
+alt - o : yabai -m window --toggle topmost
 
 # toggle sticky
-ctrl + shift - i : yabai -m window --toggle sticky
+alt - i : yabai -m window --toggle sticky
 
 # toggle full screen
-ctrl + shift - m : yabai -m window --toggle zoom-fullscreen
+alt - m : yabai -m window --toggle zoom-fullscreen
 
 # toggle full screen
-ctrl + shift - n : yabai -m window --toggle zoom-parent
+alt + shift - m : yabai -m window --toggle zoom-parent
 
 # toggle resize
-ctrl + cmd - h : yabai -m window west --resize right:-20:0 2> /dev/null || yabai -m window --resize right:-20:0
-ctrl + cmd - j : yabai -m window north --resize bottom:0:20 2> /dev/null || yabai -m window --resize bottom:0:20
-ctrl + cmd - k : yabai -m window south --resize top:0:-20 2> /dev/null || yabai -m window --resize top:0:-20
-ctrl + cmd - l : yabai -m window east --resize left:20:0 2> /dev/null || yabai -m window --resize left:20:0
+cmd + alt - h : yabai -m window west --resize right:-20:0 2> /dev/null || yabai -m window --resize right:-20:0
+cmd + alt - j : yabai -m window north --resize bottom:0:20 2> /dev/null || yabai -m window --resize bottom:0:20
+cmd + alt - k : yabai -m window south --resize top:0:-20 2> /dev/null || yabai -m window --resize top:0:-20
+cmd + alt - l : yabai -m window east --resize left:20:0 2> /dev/null || yabai -m window --resize left:20:0
 
 

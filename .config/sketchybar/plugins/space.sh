@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 update() {
     source "$CONFIG_DIR/plugins/colors.sh"
     COLOR=$BACKGROUND_2
